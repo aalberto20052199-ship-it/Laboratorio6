@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SportZone | Página 2</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background: #111;
+      color: #fff;
+    }
+    nav {
+      background: #181818;
+      padding: 1.25rem 8%;
+    }
+    nav ul {
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    nav li {
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    .current-page {
+      color: #ff4d24;
+    }
+    .carousel-item img {
+      max-height: 400px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <nav aria-label="Menú principal">
+    <ul>
+      <li><a href="index.html">Página 1</a></li>
+      <li class="current-page">Página 2</li>
+      <li><a href="pagina3.html">Página 3</a></li>
+    </ul>
+  </nav>
+
+  <main class="container my-5">
+    <h1>La Importancia del Entrenamiento</h1>
+    <p>El entrenamiento es fundamental para cualquier atleta. No solo mejora el rendimiento físico, sino que también fortalece la mente. Cada sesión de entrenamiento es una oportunidad para crecer y aprender.</p>
+    <p>Existen diferentes tipos de entrenamiento, desde el aeróbico hasta el de fuerza. Cada uno tiene sus beneficios y es importante elegir el adecuado según los objetivos personales.</p>
+    <p>Además, el entrenamiento regular ayuda a prevenir lesiones y a mantener un estilo de vida saludable. Es esencial encontrar un equilibrio entre el ejercicio y el descanso.</p>
+
+    <div id="carouselExample" class="carousel slide my-4" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDF8fHRyYWluaW5nfGVufDB8fHx8MTYxNjYzNjE5Nw&ixlib=rb-1.2.1&q=80&w=1080" class="d-block w-100" alt="Entrenamiento en el gimnasio">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDF8fHRyYWluaW5nfGVufDB8fHx8MTYxNjYzNjE5Nw&ixlib=rb-1.2.1&q=80&w=1080" class="d-block w-100" alt="Entrenamiento al aire libre">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDF8fHRyYWluaW5nfGVufDB8fHx8MTYxNjYzNjE5Nw&ixlib=rb-1.2.1&q=80&w=1080" class="d-block w-100" alt="Entrenamiento en grupo">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+    </div>
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      Ver más sobre entrenamiento
+    </button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Entrenamiento Efectivo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Un entrenamiento efectivo debe incluir una variedad de ejercicios que trabajen diferentes grupos musculares. Además, es importante establecer metas realistas y seguir un plan de entrenamiento.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
